@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAITPYGE DESERT</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <style>
+        #img {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="img" src="naitpyge_fullmap_compressed.png" alt="BIGBOY DESERT">
+    <script>
+        var image = document.getElementById("img");
+        var viewer = new Viewer(image, {
+            button: false,
+            focus: true,
+            loading: true,
+            initialViewIndex: 0,
+            toolbar: false,
+            navbar: false,
+        });
+        viewer.show();
+    </script>
+</body>
+
+</html>
